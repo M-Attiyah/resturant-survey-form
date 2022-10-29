@@ -1,0 +1,240 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Restaurant Evaluation Form</title>
+</head>
+<body>
+    
+    <main>
+        <header>
+            <h1>please review us</h1>
+            <p>please let us know how was the food and service</p>
+        </header>
+
+        <form>
+           <div class="date-visited">
+               <h3>day visited</h3>
+
+               <div class="date-inputs">
+                    <div class="date">
+                        <input type="text" id="month" value="06">
+                        <label for="month">month</label>
+                    </div>
+                    <div class="date">
+                        <input type="text" id="day" value="07">
+                        <label for="day">day</label>
+                    </div>
+                    <div class="date">
+                        <input type="text" id="year" value="1997">
+                        <label for="year">year</label>
+                    </div>
+               </div>
+           </div>
+
+           <div class="eating-status">
+               <h3>dine in / take out</h3>
+
+               <div class="radio-inputs">
+                   <div class="radio">
+                       <input type="radio" id="dine-in" name="eat">
+                       <label for="dine-in">dine in</label>
+                   </div>
+                   <div class="radio">
+                       <input type="radio" id="dine-out" name="eat">
+                       <label for="dine-out">dine out</label>
+                   </div>
+               </div>
+           </div>
+
+
+           <div class="assessments">
+               <div class="inputs-container">
+                   <h3>Overall Service Quality</h3>
+                   <fieldset class="check" id="check-1">
+                       <div class="option">
+                           <input type="radio" id="check-1-excellent" name="check-1">
+                           <label for="check-1-excellent">excellent</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-1-good" name="check-1">
+                           <label for="check-1-good">good</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-1-average" name="check-1">
+                           <label for="check-1-average">average</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-1-dissatisfied" name="check-1">
+                           <label for="check-1-dissatisfied">dissatisfied</label>
+                       </div>
+                   </fieldset>
+               </div>
+               <div class="inputs-container">
+                   <h3>Food Quality</h3>
+                   <fieldset class="check" id="check-2">
+                       <div class="option">
+                           <input type="radio" id="check-2-excellent" name="check-2">
+                           <label for="check-2-excellent">excellent</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-2-good" name="check-2">
+                           <label for="check-2-good">good</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-2-average" name="check-2">
+                           <label for="check-2-average">average</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-2-dissatisfied" name="check-2">
+                           <label for="check-2-dissatisfied">dissatisfied</label>
+                       </div>
+                   </fieldset>
+               </div>
+               <div class="inputs-container">
+                   <h3>Cleanliness</h3>
+                   <fieldset class="check" id="check-3">
+                       <div class="option">
+                           <input type="radio" id="check-3-excellent" name="option-3">
+                           <label for="check-3-excellent">excellent</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-3-good" name="option-3">
+                           <label for="check-3-good">good</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-3-average" name="option-3">
+                           <label for="check-3-average">average</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-3-dissatisfied" name="option-3">
+                           <label for="check-3-dissatisfied">dissatisfied</label>
+                       </div>
+                   </fieldset>
+               </div>
+               <div class="inputs-container">
+                   <h3>Order Accuracy</h3>
+                   <fieldset class="check" id="check-4">
+                       <div class="option">
+                           <input type="radio" id="check-4-excellent" name="option-4">
+                           <label for="check-4-excellent">excellent</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-4-good" name="option-4">
+                           <label for="check-4-good">good</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-4-average" name="option-4">
+                           <label for="check-4-average">average</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-4-dissatisfied" name="option-4">
+                           <label for="check-4-dissatisfied">dissatisfied</label>
+                       </div>
+                   </fieldset>
+               </div>
+               <div class="inputs-container">
+                   <h3>Speed of Service</h3>
+                   <fieldset class="check" id="check-5">
+                       <div class="option">
+                           <input type="radio" id="check-5-excellent" name="option-5">
+                           <label for="check-5-excellent">excellent</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-5-good" name="option-5">
+                           <label for="check-5-good">good</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-5-average" name="option-5">
+                           <label for="check-5-average">average</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-5-dissatisfied" name="option-5">
+                           <label for="check-5-dissatisfied">dissatisfied</label>
+                       </div>
+                   </fieldset>
+               </div>
+               <div class="inputs-container">
+                   <h3>Value</h3>
+                   <fieldset class="check" id="check-6">
+                       <div class="option">
+                           <input type="radio" id="check-6-excellent" name="option-6">
+                           <label for="check-6-excellent">excellent</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-6-good" name="option-6">
+                           <label for="check-6-good">good</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-6-average" name="option-6">
+                           <label for="check-6-average">average</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-6-dissatisfied" name="option-6">
+                           <label for="check-6-dissatisfied">dissatisfied</label>
+                       </div>
+                   </fieldset>
+               </div>
+               <div class="inputs-container">
+                   <h3>Overall Experience</h3>
+                   <fieldset class="check" id="check-7">
+                       <div class="option">
+                           <input type="radio" id="check-7-excellent" name="option-7">
+                           <label for="check-7-excellent">excellent</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-7-good" name="option-7">
+                           <label for="check-7-good">good</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-7-average" name="option-7">
+                           <label for="check-7-average">average</label>
+                       </div>
+                       <div class="option">
+                           <input type="radio" id="check-7-dissatisfied" name="option-7">
+                           <label for="check-7-dissatisfied">dissatisfied</label>
+                       </div>
+                   </fieldset>
+               </div>
+               <div class="text-area">
+                    <h3>
+                        <label for="message">Any comments, questions or suggestions?</label>
+                    </h3>
+                   <textarea placeholder="Type here..."></textarea>
+               </div>
+           </div>
+
+           <div class="personal-information">
+               <div class="info">
+                   <h3><label for="name">name</label></h3>
+                   <div>
+                       <input type="text">
+                       <p>optional</p>
+                   </div>
+               </div>
+               <div class="info">
+                    <h3><label for="age">age</label></h3>
+                    <div>
+                        <input type="number">
+                        <p>optional</p>
+                    </div>
+            </div>
+            <div class="info">
+                <h3><label for="email">email</label></h3>
+                <div>
+                    <input type="email">
+                    <p>optional</p>
+                </div>
+            </div>
+           </div>
+           <div class="submit-button">
+               <button type="submit" class="btn">submit</button>
+           </div>
+        </form>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,278 @@
+@import url(https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;800;900&display=swap);
+
+:root {
+    --body: #ecedf2;
+    --form: #ffffff;
+    --heading: #3a2b47;
+    --paragraph: #2f3d56;
+    --trans-paragraph: #000000ad; 
+    --border: #e6e6e7;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 16px;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background-color: var(--body);
+}
+
+
+/* Typography */
+h1, h2, h3 {
+    color: var(--heading);
+}
+h1 {
+    font-size: 2rem;
+    font-weight: 600;
+    text-transform: capitalize;
+}
+h2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+h3 {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+}
+p {
+    font-size: 1rem;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: var(--trans-paragraph);
+}
+
+
+/* Button */
+.btn {
+    font-family: 'Inter', sans-serif;
+    font-size: 1rem;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+
+/* Form */
+form input {
+    border: 1px solid var(--border);
+}
+form label {
+    text-transform: capitalize;
+    font-size: .8rem;
+    font-weight: 500;
+    color: var(--trans-paragraph);
+}
+
+/****************************************/
+
+/* Main */
+main {
+    width: 50rem;
+    max-width: 100%;
+    margin: 2rem auto;
+    background-color: var(--form);
+    padding: 1.5rem 2rem;
+}
+/* Main > Header */
+main header {
+    margin: 1rem;
+    padding-bottom: 1.5rem;
+    border-bottom: 2px solid var(--border);
+}
+main header h1 {
+    margin: 0 0 .3em;
+}
+/* Main > Form */
+main form {
+    margin: 1rem;    
+}
+.date-visited {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 0;
+}
+.date-visited .date-inputs {
+    display: flex;
+    max-width: 70%;
+    gap: 1.5em;
+}
+.date-visited .date-inputs .date {
+    flex: 1;
+}
+.date-visited .date-inputs .date input {
+    width: 100%;
+    padding: 0.5rem 1rem;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 5px;
+    border: 1px solid var(--border);
+    color: var(--paragraph);
+}
+.date-visited .date-inputs .date label {
+    display: block;
+    padding: 0.7em 0 0;
+}
+
+
+/**************/
+
+.eating-status {
+    display: flex;
+    padding: 2rem 0;
+    margin-bottom: 1rem;
+}
+.eating-status .radio-inputs {
+    flex: 1;
+    display: flex;
+    justify-content: flex-end;
+    gap: 2rem;
+}
+.eating-status .radio-inputs .radio {
+    display: flex;
+    align-items: center;
+    gap: .5em;
+}
+
+/***************/
+
+.assessments {
+    border-top: 2px solid var(--border);
+    padding: 3rem 0;
+}
+.assessments .inputs-container {
+    margin-bottom: 2.5rem;
+}
+.assessments .inputs-container .check {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1rem;
+    border: none;
+}
+.assessments .inputs-container .check .option {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.assessments .text-area {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin: 4rem 0 0;
+}
+.assessments .text-area h3 label {
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--heading);
+}
+.assessments .text-area textarea {
+    padding: 1em;
+    height: 180px;
+    border: 2px solid #e7e7e7;
+    border-radius: .8rem;
+}
+
+/***************************/
+
+.personal-information {
+    border-bottom: 2px solid #e7e7e7;
+    border-top: 2px solid #e7e7e7;
+    padding: 3rem 0;
+}
+
+.personal-information .info {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 1.5rem;
+}
+.personal-information .info > div {
+    flex: 1;
+    max-width: 60%;
+}
+.personal-information .info > div input {
+    width: 100%;
+    padding: 0.8em;
+    border: 2px solid #e7e7e7;
+    border-radius: 5px;
+}
+.personal-information .info > div p {
+    font-weight: 400;
+    font-size: 11px;
+    margin-top: 0.5rem;
+}
+
+/***********************/
+
+.submit-button {
+    margin-top: 2rem;
+    text-align: center;
+}
+
+.submit-button > button {
+    padding: 1em 2em;
+    cursor: pointer;
+    border: hidden;
+    background-color: #000;
+    color: #e7e7e7;
+}
+.submit-button > button:hover {
+    opacity: .7;
+}
+
+
+/*************************/
+
+@media (max-width: 500px) {
+    .date-visited,
+    .eating-status,
+    .assessments .check,
+    .personal-information .info {
+        flex-direction: column;
+        gap: .8rem;
+    }
+    header h1 {
+        font-size: 1.5rem;
+    }
+    header p {
+        font-size: .8rem;
+    }
+    .date-visited .date-inputs {
+        max-width: 100%;
+    }
+    .date-visited .date-inputs .date input {
+        padding: .5rem;
+    }
+    .eating-status .radio-inputs {
+        justify-content: flex-start;
+    }
+    .personal-information .info > div {
+        max-width: 100%;
+    }
+    .submit-button button {
+        width: 100%;
+        padding: .5rem 1rem;
+    }
+}
+
+@media (max-width: 375px) {
+    main {
+        padding: 1.5rem 1rem;
+    }
+    main header,
+    main form {
+        margin: 0;
+    }
+    .submit-button button {
+        width: 100%;
+        font-size: .8rem;
+        padding: .5rem 1rem;
+    }
+}
